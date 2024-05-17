@@ -19,8 +19,7 @@ body {
 }
 .pimg2 {
   background-image: url(img2.jpg);
- min-height: 100%;
- 
+  min-height: 100%;
 }
 .pimg3 {
   background-image: url(img3.jpg);
@@ -68,6 +67,7 @@ body {
   background-color: #666;
   color: white;
 }
-.section-dark{background-color: #666;
-  color: white;
+.section-dark {
+  background-color: #666;
+  color: whitesmoke;
 }
