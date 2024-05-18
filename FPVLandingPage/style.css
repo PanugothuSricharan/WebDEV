@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+    line-height: 1,4;
+    font-weight: 300;
+}
+.hero_section{
+    background-image: url(img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    background-size: cover;
+}
