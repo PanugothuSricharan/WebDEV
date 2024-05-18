@@ -1,16 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html,body{
-    line-height: 1,4;
-    font-weight: 300;
+html,
+body {
+  line-height: 1, 4;
+  font-weight: 300;
+  font-family: "Chakra Petch", sans-serif;
 }
-.hero_section{
-    background-image: url(img1.jpg);
-    background-position: center;
-    background-repeat: no-repeat; 
-    min-height: 100vh;
-    background-size: cover;
+.hero_section {
+  background-image: url(img1.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.text_container {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 200px;
+  font-size: 60px;
+}
+.myName {
+  font-size: 40px;
+}
+.black_box {
+  background: linear-gradient(to right, #2d6c1e, #53a40c);
+  padding: 20px;
+}
+.black_box h2 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+.black_box span {
+  font-size: 60px;
+}
+.work {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px; /* Adds space between cards */
+}
+
+.work img {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+  height: auto;
+  border-radius: 10px; /* Maintains aspect ratio */
+}
+
+.card_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stacks image and text vertically */
+  width: 100%;
+  height: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .work {
+    flex-direction: column;
+    align-items: center; /* Centers cards on smaller screens */
+  }
+
+  .card {
+    max-width: 90%; /* Reduces card width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%; /* Full width on very small screens */
+  }
+}
+.card_container h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.card:hover {
+  transform: scale(1.04);
+  transition: 0.5s ease-in-out; /* Includes padding in width and height */
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.4);
+}
+.card {
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  max-width: 330px;
+  width: 100%; /* Makes card width responsive */
+  height: auto; /* Allows height to adjust based on content */
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.4);
+  padding: 20px; /* Adds padding for inner spacing */
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out; /* Includes padding in width and height */
+}
+.bottom_section {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.contact h4,
+.About h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.About {
+  background-color: antiquewhite;
+}
+.contact {
+  background-color: aquamarine;
+}
+.about_p,
+.contact_p,
+.email {
+  padding: 20px;
+}
+
+.contact,
+email {
+  padding-bottom: 20px;
 }
