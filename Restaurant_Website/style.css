@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
+  position: sticky;
+  top: 0;
+  margin-bottom: 20px;
+  background: white;
+  padding: 10px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 55px;
+}
+.bar_icon {
+  font-size: 20px;
+}
+.hero_section {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.offer {
+  margin-bottom: 30px;
+  color: white;
+  padding: 5px 10px;
+  align-self: flex-start;
+  background-color: rgb(20, 192, 20);
+  display: inline-block; /*this make the background color to only that 
+  part where the text is present*/
+}
+.hero_text h1 {
+  font-size: 80px;
+}
+.explore_btn {
+  margin: 35px 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(232, 145, 33);
+  padding: 6px 6px;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+.explore_btn:hover {
+  opacity: 0.8;
+  transition: 0.2s ease;
+  transform: scale(1.05);
+}
+@media (max-width: 786px) {
+  .hero_section {
+    flex-direction: column;
+  }
+  .big_image {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_content {
+    gap: 10px;
+    padding: 10px;
+  }
+  .hero_text h1 {
+    font-size: 50px;
+  }
+}
+.features {
+  display: flex;
+  gap: 40px;
+justify-content: center;  margin-top: 80px;
+
+}
+
+.features .icon img {
+  width: 64px; 
+  height: 64px; 
+}
+.delivery {
+  display: flex;
+}
+.Fresh {
+  display: flex;
+}
+.Discount{
+  display: flex;
+}
+.f_content{
+  padding: 10px;
+}
+
