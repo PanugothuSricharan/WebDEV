@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --purple500: #10439f;
+  --purple300: #874ccc;
+  --purple600: #c65bcf;
+  --pink600: #f27bbd;
+  --body: #eef7ff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  background-color: var(--purple500);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  color: #eef7ff;
+}
+nav ul li {
+  border-radius: 3px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in;
+}
+
+nav ul li:hover {
+  transition: 0.2s ease-in;
+  border-bottom: 2px solid #c6a1c9;
+}
+.hero-section {
+  background-image: url(images/hero_image.png);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #eef7ff;
+  text-align: center;
+  gap: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container > h1 {
+  font-size: 96px;
+}
+.container > h3 {
+  font-size: 36px;
+}
+.icon_title {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.icon_title i {
+  padding-top: 10px;
+}
+/* .music_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.music_section {
+  color: white;
+  background-color: #e9b1ee;
+  display: grid;
+  place-items: center;
+  text-align: justify;
+}
+.music_description {
+    max-width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+.second_title{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 20px;
+    border-style: none;
+    background-color:  #a003ae;
+    border-radius: 3px;
+}
+.music_description p {
+    font-size: 13px;
+}.music_description   {
+    font-size: 23px;
+    font-weight: 2px;
+}
+.Trail{padding: 10px;}
